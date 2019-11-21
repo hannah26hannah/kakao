@@ -8,6 +8,7 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
     />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Friends | Kakao Clone</title>
   </head>
   <body>
@@ -41,12 +42,12 @@
 
     <main class="friends">
       <header class="friends__header">
-        <div class="friends__friend friend friend--lg">
+        <div class="friends__friend friend">
           <div class="friend__column">
             <img
               src="images/avatar.jpg"
               alt=""
-              class="g-avatar friends__avatar"
+              class="g-avatar friend__avatar"
             />
             <div class="friend__content">
               <span class="friend__name">
@@ -63,11 +64,7 @@
         <h5 class="friends__title">Plus Friend</h5>
         <div class="friends__friend friend">
           <div class="friend__column">
-            <img
-              src="images/avatar.jpg"
-              alt=""
-              class="g-avatar friends__avatar"
-            />
+            <img src="images/avatar.jpg" alt="" class="friend__avatar" />
             <div class="friend__content">
               <span class="friend__name">
                 Plus Friend
@@ -76,17 +73,14 @@
           </div>
         </div>
       </div>
-      <h5 class="friends__title">
-        Friends 14
-      </h5>
+
       <ul class="friends__list">
+        <h5 class="friends__title">
+          Friends 14
+        </h5>
         <li class="friends__friend friend">
           <div class="friend__column">
-            <img
-              src="images/avatar.jpg"
-              alt=""
-              class="g-avatar friends__avatar"
-            />
+            <img src="images/avatar.jpg" class="friend__avatar" />
             <div class="friend__content">
               <span class="friend__name">
                 Hannah Yoo
@@ -98,8 +92,7 @@
           </div>
           <div class="friend__column">
             <div class="friend__now-listening">
-              <span>FTISLAND (FT NomadCoders)</span>
-              <i class="fas fa-play"></i>
+              <span>FTISLAND (FT NomadCoders) <i class="fas fa-play"></i></span>
             </div>
           </div>
         </li>
@@ -130,5 +123,8 @@
         </li>
       </ul>
     </nav>
+    <div class="bigScreen">
+      <span class="bigScreen__text">Please make your screen small 😨</span>
+    </div>
   </body>
 </html>

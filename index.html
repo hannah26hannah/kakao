@@ -8,6 +8,7 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
     />
+    <link rel="stylesheet" href="css/styles.css">
     <title>Chats | Kakao Clone</title>
   </head>
   <body>
@@ -44,19 +45,30 @@
       <ul class="chats__list">
         <a href="chat.html">
         <li class="chats__chat chat">
-          <div class="chat__column">
-            <img class="chat__avatar g-avatar" src="images/avatar.jpg" />
-            <div class="chat__content"></div>
-            <span class="chat__username">
-              Lynn
-            </span>
-            <span class="chat__preview">
-              Going home!
-            </span>
-          </div>
-          <div class="chat__column">
-            <span class="chat__timestamp">Yesterday</span>
-          </div>
+            <div class="chats__chat friend friend--lg">
+                <div class="friend__column">
+                  <img
+                    src="images/avatar.jpg"
+                    alt=""
+                    class="m-avatar friend__avatar"
+                  />
+                  <div class="friend__content">
+                    <span class="friend__name">
+                      Lynn
+                    </span>
+                    <span class="friend__bottom-text">
+                      Going home!
+                    </span>
+                  </div>
+                </div>
+                <div class="friend__column">
+                  <div class="friend__now-listening">
+                    <span class="chat__timestamp">
+                      March 8
+                    </span>
+                  </div>
+                </div>
+              </div>
         </a>
         </li>
       </ul>
@@ -71,6 +83,7 @@
         </li>
         <li class="nav__list-item">
           <a href="index.html" class="nav__list-link">
+            <div class="nav__badge">8</div>
             <i class="fas fa-comment"></i>
           </a>
         </li>
@@ -86,5 +99,8 @@
         </li>
       </ul>
     </nav>
+    <div class="bigScreen">
+      <span class="bigScreen__text">Please make your screen small 😨</span>
+    </div>
   </body>
 </html>
