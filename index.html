@@ -12,18 +12,11 @@
     <title>Chats | Kakao Clone</title>
   </head>
   <body>
-    <div class="status-bar">
-      <div class="status-bar__column">
-        <span class="status-bar__colck"></span>
-      </div>
-      <div class="status-bar__column">
-        <i class="fas fa-clock"></i>
-        <i class="fas fa-volume-mute"></i>
-        <i class="fas fa-wifi"></i>
-        <span class="status-bar__battery-level">100%</span>
-        <i class="fas fa-battery-full"></i>
-      </div>
+    <div id="headerBar">
+      <status-bar></status-bar>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="status-bar.js"></script>
 
     <header class="header">
       <div class="header__header-column">
@@ -103,21 +96,4 @@
       <span class="bigScreen__text">Please make your screen small 😨</span>
     </div>
   </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-$(function() {
-  setInterval(function() {
-    
-    let d = new Date();
-    let hour = d.getHours();
-    let minute = d.getMinutes(); 
-    let second = d.getSeconds();
-    let date = `${hour < 10 ? "0" + hour : hour}`+":"+`${minute < 10 ? "0" + minute : minute}`;
-    
-    $(".status-bar__colck").html(date).toString();
-  }, 1000);
-
-});
-
-</script>
 </html>

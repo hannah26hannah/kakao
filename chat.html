@@ -13,18 +13,11 @@
   </head>
   <body class="chats-body">
     <div class="header-wrapper">
-      <div class="status-bar">
-        <div class="status-bar__column">
-          <span class="status-bar__colck">13:54</span>
-        </div>
-        <div class="status-bar__column">
-          <i class="fas fa-clock"></i>
-          <i class="fas fa-volume-mute"></i>
-          <i class="fas fa-wifi"></i>
-          <span class="status-bar__battery-level">100%</span>
-          <i class="fas fa-battery-full"></i>
-        </div>
+      <div id="headerBar">
+        <status-bar></status-bar>
       </div>
+      <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+      <script src="status-bar.js"></script>
       <header class="header">
         <div class="header__header-column">
           <a href="index.html" class="header__back-btn">
