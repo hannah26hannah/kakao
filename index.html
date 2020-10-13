@@ -10,14 +10,16 @@
     />
     <link rel="stylesheet" href="css/styles.css">
     <title>Chats | Kakao Clone</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vuex"></script>
   </head>
   <body>
     <div id="headerBar">
       <status-bar></status-bar>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="status-bar.js"></script>
 
+    
     <header class="header">
       <div class="header__header-column">
         <h1 class="header__title">Chats</h1>
@@ -34,36 +36,18 @@
         </span>
       </div>
     </header>
+    
     <main class="chats">
       <ul class="chats__list">
         <a href="chat.html">
-        <li class="chats__chat chat">
-            <div class="chats__chat friend friend--lg">
-                <div class="friend__column">
-                  <img
-                    src="images/avatar.jpg"
-                    alt=""
-                    class="m-avatar friend__avatar"
-                  />
-                  <div class="friend__content">
-                    <span class="friend__name">
-                      Lynn
-                    </span>
-                    <span class="friend__bottom-text">
-                      Going home!
-                    </span>
-                  </div>
-                </div>
-                <div class="friend__column">
-                  <div class="friend__now-listening">
-                    <span class="chat__timestamp">
-                      March 8
-                    </span>
-                  </div>
-                </div>
-              </div>
+          <li class="chats__chat chat">
+            <div id="profileCon">
+              <user-profile></user-profile>
+            </div>
+
+            <script src="user.js"></script>
+          </li>
         </a>
-        </li>
       </ul>
     </main>
     
@@ -71,33 +55,13 @@
       <footer-bar></footer-bar>
     </nav>
     <script src="footer.js"></script>
-    <!-- <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__list-item">
-          <a href="friends.html" class="nav__list-link">
-            <i class="far fa-user"></i>
-          </a>
-        </li>
-        <li class="nav__list-item">
-          <a href="index.html" class="nav__list-link">
-            <div class="nav__badge">8</div>
-            <i class="fas fa-comment"></i>
-          </a>
-        </li>
-        <li class="nav__list-item">
-          <a href="find.html" class="nav__list-link">
-            <i class="fas fa-search"></i>
-          </a>
-        </li>
-        <li class="nav__list-item">
-          <a href="more.html" class="nav__list-link">
-            <i class="fas fa-ellipsis-h"></i
-          ></a>
-        </li>
-      </ul>
-    </nav> -->
+    
+
     <div class="bigScreen">
       <span class="bigScreen__text">Please make your screen small 😨</span>
     </div>
+    <script>
+
+    </script>
   </body>
 </html>

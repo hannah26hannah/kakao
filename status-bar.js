@@ -7,7 +7,7 @@ Vue.component('status-bar', {
         <span class="status-bar__colck">{{ timestamp }}</span>
       </div>
       <div class="status-bar__column">
-        <i class="fas fa-clock"></                                                                                  i>
+        <i class="fas fa-clock"></i>
         <i class="fas fa-volume-mute"></i>
         <i class="fas fa-wifi"></i>
         <span class="status-bar__battery-level">100%</span>
@@ -35,7 +35,7 @@ Vue.component('status-bar', {
         }
     }
   })
-  var app = new Vue({
+  const app = new Vue({
     el: '#headerBar'
   })
 

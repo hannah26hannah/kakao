@@ -25,6 +25,6 @@ Vue.component('footer-bar', {
     </ul>
     `
 })
-var app = new Vue({
+const vapp = new Vue({
     el: '#footerBar'
 })
