@@ -1,3 +1,3 @@
 # kakao Challenge
 
-Kaka Clone Version 2.0
+Responsive Messenger Web App Clone Project (Kakao)
